@@ -1,0 +1,42 @@
+.decor{
+    display: inline;
+    background-repeat: no-repeat;
+    background-position: left bottom 15px;
+    background-size: 100% 12px;
+    background-image: linear-gradient(to right, $orange-color, $orange-color);
+
+    /* TabletBig */
+    @media (max-width: 1139px) {
+        background-position: left bottom 10px;
+        background-size: 100% 10px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        background-position: left bottom 8px;
+        background-size: 100% 8px;     
+    }
+
+    /* Mobile */
+    @media (max-width: 767px) {
+        background-position: left bottom 4px;
+    }
+
+    &--lg{
+        background-position: left bottom 8px;
+
+        /* Tablet */
+        @media (max-width: 899px) {
+            background-position: left bottom 4px;          
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            background-position: left bottom 4px;
+        }
+    }
+
+    &--xs{
+        background-position: left bottom -4px;
+    }
+}

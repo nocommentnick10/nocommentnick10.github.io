@@ -1,0 +1,28 @@
+.socials{
+    display: flex;
+    column-gap: 30px;
+
+    img{
+        width: 48px;
+        height: 48px;
+    }
+
+    /* TabletBig */
+    @media (max-width: 1139px) {
+        column-gap: 20px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        img{
+            width: 38px;
+            height: 38px;
+        }           
+    }
+
+    &__link{
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+}

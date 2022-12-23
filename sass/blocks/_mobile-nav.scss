@@ -1,0 +1,100 @@
+.mobile-nav{
+    position: relative;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.header-m{
+    @media (min-width: 900px) {
+        display: none;
+    }
+}
+
+.nav-m{
+    @media (min-width: 900px) {
+        display: none;
+    }
+}
+
+// Ширина и высота линии в иконке
+$lineWidth: 40px;
+$lineHeight: 5px;
+$color: rgb(0, 0, 0);
+
+// Размеры контейнера
+$width: $lineWidth;
+$height: $lineHeight * 5;
+
+.nav-m {
+    width: $width;
+    height: $height;
+
+    display: none;
+    // display: flex;
+	justify-content: center;
+	align-items: center;
+
+    cursor: pointer;
+
+    @media (max-width: 899px) {
+        display: flex;
+    }
+}
+
+.nav-m__middle {
+    position: relative;
+    width: $lineWidth;
+    height: $lineHeight;
+    background-color: $color;
+
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: $lineWidth;
+        height: $lineHeight;
+        transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+        background-color: $color;
+    }
+
+    &::before {
+        top: -($lineHeight*2);
+    }
+
+    &::after {
+        top: $lineHeight*2;
+    }
+}
+
+/* Active state */
+.nav-m.nav-m--active {
+    position: fixed;
+    z-index: 9999;
+    top: 30px;
+    right: 16px;
+}
+
+.nav-m.nav-m--active .nav-m__middle {
+    background-color: transparent;
+    $color: #fff;
+
+    &::before, &::after {
+        top: 0;
+        transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+        background-color: $black-color;
+    }
+
+    &::before {
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        transform: rotate(-45deg);
+    }
+}

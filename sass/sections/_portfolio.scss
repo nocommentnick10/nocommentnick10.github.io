@@ -1,0 +1,30 @@
+.portfolio{
+    padding: 80px 0px 90px;
+
+    background: linear-gradient(0deg, #F5FBFF, #F5FBFF), #F4F8F9;
+
+    /* TabletBig */
+    @media (max-width: 1139px) {
+        padding: 40px 0px 60px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        padding: 30px 0px 40px;           
+    }
+
+    &__heading{
+        // margin-bottom: 65px;
+        margin-bottom: 30px;
+
+        /* TabletBig */
+        // @media (max-width: 1139px) {
+        //     margin-bottom: 40px;
+        // }
+
+        /* Tablet */
+        // @media (max-width: 899px) {
+        //     margin-bottom: 30px;
+        // }
+    }
+}

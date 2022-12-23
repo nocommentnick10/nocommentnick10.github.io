@@ -1,0 +1,28 @@
+.backbtn{
+    position: fixed;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 50px;
+    z-index: 1049;
+
+    border-radius: 50%;
+    background-color: white;
+
+    font-weight: 700;
+    font-size: 50px;
+    transition: 0.1s ease-in;
+    color: $orange-color !important;
+
+    &:hover{
+        background-color: $gray-color;
+    }
+
+    &__arrow{
+        position: absolute;
+        left: 50%;
+        bottom: -100%;
+        transform: translate(-50%, -60%);
+    }
+}

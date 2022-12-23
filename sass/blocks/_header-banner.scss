@@ -1,0 +1,33 @@
+.header-banner{
+    position: relative;
+    z-index: -9;
+
+    img{
+        margin: -156px auto 0px;
+        object-fit: cover;
+
+        width: 1440px;
+        height: 759px;
+
+        /* TabletBig */
+        @media (max-width: 1139px) {
+            margin: -83px auto 0px;
+            height: 475px;
+            width: 900px;
+        }
+        
+        /* Tablet */
+        @media (max-width: 899px) {
+            margin: -90px auto 0px;
+            height: 403px;
+            width: 768px;       
+        }
+
+        /* Mobile */
+        @media (max-width: 767px) {
+            margin: 0px auto;
+            width: 320px;
+            height: 168px;
+        }
+    }
+}

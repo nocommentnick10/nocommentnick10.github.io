@@ -1,0 +1,13 @@
+.main{
+    margin-top: -32px;
+
+    /* TabletBig */
+    @media (max-width: 1139px) {
+        margin-top: -10px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        margin-top: 0px;           
+    }
+}

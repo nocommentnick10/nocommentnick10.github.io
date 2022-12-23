@@ -1,0 +1,28 @@
+.hw{
+    padding: 70px 0px 90px;
+
+    /* TabletBig */
+    @media (max-width: 1139px) {
+        padding: 60px 0px 70px;
+    }
+
+    /* Tablet */
+    @media (max-width: 899px) {
+        padding: 40px 0px;       
+    }
+
+    &__heading{
+        text-align: center;
+        margin-bottom: 70px;
+
+        /* TabletBig */
+        @media (max-width: 1139px) {
+            margin-bottom: 50px;
+        }
+
+        /* Tablet */
+        @media (max-width: 899px) {
+            margin-bottom: 40px;           
+        }
+    }
+}

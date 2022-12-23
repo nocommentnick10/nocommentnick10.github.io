@@ -1,0 +1,36 @@
+.footer{
+    padding: 40px 0px 50px;
+
+    background-color: #333333;
+
+    /* TabletBig */
+    @media (max-width: 1139px) {
+        padding: 30px 0px;  
+    }
+
+    &__copyright{
+        margin-bottom: 10px;
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.4;
+        color: white;
+    }
+
+    &__text{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #B0B0B0;
+
+        /* TabletBig */
+        @media (max-width: 1139px) {
+            font-size: 14px;
+        }
+
+        a{
+            text-decoration: underline;
+            color: white;
+        }
+    }
+}
